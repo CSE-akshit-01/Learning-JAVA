@@ -1,0 +1,10 @@
+//code for Name and Address
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("AKSHIT GARG");   //Name
+       System.out.print("XYZ hostel GREATER.NOIDA"); //Address
+    }
+}
+
+
