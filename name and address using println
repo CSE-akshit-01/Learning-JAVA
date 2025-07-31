@@ -1,0 +1,9 @@
+//name and address using println
+public class AddressMultiplePrintln {
+    public static void main(String[] args) {
+        System.out.println("AKSHIT GARG");
+        System.out.println("XYZ Hostel");
+        
+        
+    }
+}
