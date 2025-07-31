@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter first number: ");          // user input 1
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter second number: ");        // user input 2 
+        double num2 = scanner.nextDouble();
+
+        System.out.print("Enter operation (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+
+        double output;  // use a single result variable for all operations
+
+        switch (operator) {
+            case '+':
+                output = num1 + num2;               //addition
+                System.out.println("Sum: " + output);
+                break;
+
+            case '-':
+                  output = num1 - num2;               //subtration
+                System.out.println("Difference: " + output);
+                break;
+
+            case '*':
+                output = num1 * num2;                //product
+                System.out.println("Product: " + output);
+                break;
+
+            case '/':
+                if (num2 != 0) {
+                    output = num1 / num2;              //division
+                    System.out.println("Quotient: " + output);
+                } else {
+                    System.out.println("Error: Division by zero is not allowed.");
+                }
+                break;
+
+            
+
+        }
+
+        scanner.close();
+    }
+}
