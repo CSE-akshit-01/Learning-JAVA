@@ -1,0 +1,13 @@
+//Programe for input of Age
+import java.util.Scanner;  
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("AKSHIT");
+        
+        Scanner sc = new Scanner(System.in);  
+        System.out.print("Enter your age: ");//age
+        int age = sc.nextInt();
+        System.out.println("My age is " + age);   
+    }
+}
