@@ -1,0 +1,13 @@
+public class MonkeyTrouble {
+
+    public static boolean Trouble(boolean aSmile, boolean bSmile) {
+        return (aSmile && bSmile) || (!aSmile && !bSmile);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Trouble(true, true));  
+        System.out.println(Trouble(false, false)); 
+        System.out.println(Trouble(true, false));
+        System.out.println(Trouble(false, true));  
+    }
+}
